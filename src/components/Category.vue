@@ -1,6 +1,14 @@
 <template>
 	<v-layout row wrap>
-		
+		<vue-headful
+			:title="title_tag"
+			description=""
+			keywords=""
+			image=""
+			lang=""
+			ogLocale=""
+			url=""
+		/>
 		<!-- tag  -->
 		<v-flex xs12 sm12><v-chip color="orange" text-color="white"><v-avatar><v-icon>code</v-icon></v-avatar>{{title_tag}}</v-chip></v-flex>
 		<v-flex xs6 sm3 v-for = "(video,index) in videos" :key="index">
@@ -11,7 +19,7 @@
 			        ></v-card-media>
 			        <v-card-title primary-title>
 			          <div>
-			            <h3 class="body-2 mb-0"><router-link :to="{name:'Content',params:{tag:video.link_tag,link_url:video.link}}">{{video.title}}</router-link></h3>
+			            <h3 class="body-2 mb-0"><router-link :to="{name:'PostContent',params:{tag:video.link_tag,link_url:video.link}}">{{video.title}}</router-link></h3>
 			          </div>
 			        </v-card-title>
 			     </v-card>
@@ -36,6 +44,7 @@
 <script>
 	export default{
 		data:()=>({
+		
 			title_tag:"",
 			videos:{}
 		}),

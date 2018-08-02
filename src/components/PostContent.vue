@@ -1,5 +1,6 @@
 <template>
 	<v-layout row wrap>
+		
 		<v-flex xs12 sm3></v-flex>
 		<v-flex xs12 sm6>
 			<v-card v-for="(post, index) in video_link" :key="index">
@@ -7,6 +8,15 @@
 				<v-card-title priamry-title >
 					{{post.title}}
 				</v-card-title>
+				<vue-headful
+					:title="post.title"
+					description=""
+					keywords=""
+					image=""
+					lang=""
+					ogLocale=""
+					url=""
+				/>
 			</v-card>
 		</v-flex>
 		<v-flex xs12 sm3></v-flex>
@@ -23,8 +33,8 @@
 			            <h3 class="body-2 mb-0"><router-link :to="{name:'PostContent',params:{tag:video.link_tag,link_url:video.link}}">{{video.title}}</router-link></h3>
 			          </div>
 			        </v-card-title>
-			     </v-card>
-      		</v-flex>
+			    </v-card>
+      	</v-flex>
 
 
 	</v-layout>

@@ -30,7 +30,7 @@
 
         <v-list-tile avatar tag="div">
           <v-list-tile-avatar>
-            <img src="https://randomuser.me/api/portraits/men/85.jpg">
+            <img src="public/img/avatar.jpg">
           </v-list-tile-avatar>
 
           <v-list-tile-content>
@@ -120,7 +120,7 @@
         items: [
           // { title: 'Home', icon: 'dashboard',link_tag:'home' },
           { title: 'HTML/CSS', icon: 'trip_origin',link_tag:'html-css'},
-          { title: 'JAVASCRIPT/JQUERY', icon: 'trip_origin',link_tag:'javacript-jquery' },
+          { title: 'JQUERY/AJAX', icon: 'trip_origin',link_tag:'jquery-ajax' },
           { title: 'PHP/OOP', icon: 'trip_origin',link_tag:'php-oop' },
           { title: 'CODEIGNITER', icon: 'trip_origin',link_tag:'codeigniter' },
           { title: 'LARAVEL 5', icon: 'trip_origin',link_tag:'laravel-5' },

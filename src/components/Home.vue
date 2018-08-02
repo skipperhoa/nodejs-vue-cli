@@ -1,5 +1,14 @@
 <template>
 	<v-layout row wrap>
+		<vue-headful
+			title="Videos Tutorial"
+			description=""
+			keywords=""
+			image=""
+			lang=""
+			ogLocale=""
+			url=""
+		/>
 		<v-flex xs12 sm3></v-flex>
 		<v-flex xs12 sm6>
 			<v-card>
@@ -77,6 +86,8 @@
 			pageShow:0
 		}),
 		created(){
+			//document.title = 'New Title'  
+  	     	//document.head.querySelector('meta[name=description]').content = 'New Description'  
             this.get_page_video(0);
             this.get_all_videos();
         },
